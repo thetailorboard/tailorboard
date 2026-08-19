@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — TailorBoard</title>
+<meta name="description" content="Get in touch with The Tailor Board — support, feedback, or general inquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="wordmark"><span class="mark"></span>TailorBoard <span class="dim">— The Tailor Board</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a><a href="faq.html">FAQ</a><a href="contact.html" class="active">Contact</a>
+      <a href="download.html" class="nav-cta">Download APK</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-panel">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+    <a href="download.html" class="nav-cta">Download APK</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--gold-soft)">Contact</span>
+    <h1>We'd love to hear from you.</h1>
+    <p class="lede">Questions, feedback, or a bug to report — reach out and we'll respond within 24 hours.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2" style="gap:56px;align-items:start;">
+      <div class="card" style="padding:32px;">
+        <h3 style="margin-bottom:18px;">Send a message</h3>
+        <form id="contact-form">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p id="form-status" style="display:none;margin-top:14px;font-size:13.5px;color:var(--ink-soft);"></p>
+        </form>
+      </div>
+
+      <div>
+        <h3 style="margin-bottom:18px;">Direct contact</h3>
+        <div class="info-strip" style="flex-direction:column;gap:20px;">
+          <div class="info-block"><div class="k">Email</div><div class="v"><a href="mailto:thetailorboard@gmail.com">thetailorboard@gmail.com</a></div></div>
+          <div class="info-block"><div class="k">Phone</div><div class="v">+234 810 661 1231</div></div>
+          <div class="info-block"><div class="k">WhatsApp</div><div class="v"><a href="https://wa.me/2348106611231">+234 810 661 1231</a></div></div>
+          <div class="info-block"><div class="k">Address</div><div class="v">Benin City, Nigeria</div></div>
+          <div class="info-block"><div class="k">Response time</div><div class="v">Within 24 hours</div></div>
+        </div>
+
+        <h3 style="margin:34px 0 14px;">Follow us</h3>
+        <div class="social-row" style="gap:20px;">
+          <a href="https://facebook.com/thetailorboard" style="color:var(--navy);">Facebook</a>
+          <a href="https://twitter.com/thetailorboard" style="color:var(--navy);">X / Twitter</a>
+          <a href="https://instagram.com/thetailorboard" style="color:var(--navy);">Instagram</a>
+          <a href="https://youtube.com/@thetailorboard" style="color:var(--navy);">YouTube</a>
+          <a href="https://tiktok.com/@thetailorboard" style="color:var(--navy);">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-wordmark">TailorBoard</div>
+        <p>Run your tailoring business smarter. Built in Benin City, Nigeria.</p>
+        <div class="social-row">
+          <a href="https://facebook.com/thetailorboard">FB</a><a href="https://twitter.com/thetailorboard">X</a>
+          <a href="https://instagram.com/thetailorboard">IG</a><a href="https://youtube.com/@thetailorboard">YT</a>
+          <a href="https://tiktok.com/@thetailorboard">TikTok</a>
+        </div>
+      </div>
+      <div><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="download.html">Download</a></div>
+      <div><h4>Company</h4><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a></div>
+      <div><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Tailor Board. All rights reserved.</span>
+      <span>Benin City, Nigeria · thetailorboard@gmail.com</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
