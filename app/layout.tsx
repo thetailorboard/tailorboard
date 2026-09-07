@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -7,10 +7,14 @@ export const metadata: Metadata = {
   title: "TailorBoard - The Tailor's Business Partner",
   description: "Professional business management for tailors. Manage customers, orders, measurements, and payments all in one app.",
   keywords: "tailor, business management, invoicing, customer management, Nigeria",
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/favicon.ico",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
