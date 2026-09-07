@@ -21,7 +21,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-yellow-400 transition">Features</Link></li>
               <li><Link href="/about" className="hover:text-yellow-400 transition">About</Link></li>
-              <li><a href="https://play.google.com/store/apps/details?id=com.tailorboard" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">Download</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.tailorboard.app" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition">Download</a></li>
             </ul>
           </div>
 
