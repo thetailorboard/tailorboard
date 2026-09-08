@@ -1,56 +1,29 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
-import { Scissors, Menu, X } from "lucide-react";
+import { Scissors } from "lucide-react";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50 border-b-2 border-yellow-200">
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-3" title="TailorBoard - Home">
+        <Link href="/" className="flex items-center gap-2">
           <div className="bg-gradient-to-br from-blue-900 to-blue-800 text-yellow-400 w-10 h-10 rounded-lg flex items-center justify-center font-black">
-            <Scissors size={20} aria-label="TailorBoard Logo" />
+            <Scissors size={20} />
           </div>
-          <span className="text-xl font-black text-blue-900 hidden sm:inline">TailorBoard</span>
-          <span className="text-xs text-gray-500 hidden sm:inline">by DIBA</span>
+          <div>
+            <span className="text-lg font-black text-blue-900">TailorBoard</span>
+            <p className="text-xs text-gray-500">by DIBA</p>
+          </div>
         </Link>
 
         <div className="hidden md:flex gap-8 items-center">
           <Link href="/" className="text-gray-700 hover:text-blue-900 font-semibold transition">Home</Link>
-          <Link href="/about" className="text-gray-700 hover:text-blue-900 font-semibold transition">About</Link>
+          <Link href="/features" className="text-gray-700 hover:text-blue-900 font-semibold transition">Features</Link>
           <Link href="/contact" className="text-gray-700 hover:text-blue-900 font-semibold transition">Contact</Link>
-          <a href="https://play.google.com/store/apps/details?id=com.tailorboard.app" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-900 to-blue-800 text-yellow-400 px-6 py-2 rounded-lg hover:shadow-lg transition font-semibold">Download</a>
+          <a href="https://play.google.com/store/apps/details?id=com.tailorboard" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-900 to-blue-800 text-yellow-400 px-6 py-2 rounded-lg hover:shadow-lg transition font-semibold">Download</a>
         </div>
 
-        <button
-          className="md:hidden text-blue-900 font-bold"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          {menuOpen ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        <button className="md:hidden text-blue-900 font-bold" aria-label="Menu">☰</button>
       </nav>
-
-      {menuOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-4 py-4 flex flex-col gap-4">
-          <Link href="/" className="text-gray-700 hover:text-blue-900 font-semibold transition" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link href="/about" className="text-gray-700 hover:text-blue-900 font-semibold transition" onClick={() => setMenuOpen(false)}>About</Link>
-          <Link href="/contact" className="text-gray-700 hover:text-blue-900 font-semibold transition" onClick={() => setMenuOpen(false)}>Contact</Link>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.tailorboard.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue-900 to-blue-800 text-yellow-400 px-6 py-2 rounded-lg text-center font-semibold"
-            onClick={() => setMenuOpen(false)}
-          >
-            Download
-          </a>
-        </div>
-      )}
     </header>
   );
 }
